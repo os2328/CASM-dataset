@@ -130,7 +130,7 @@ for h in SMOS_list_full:
 		
     dataset.close()
     # date from file name
-    from_name_smos = h.split(path_to_files + '/SMOS_gridded/201",1)[1]
+    from_name_smos = h.split(path_to_files + '/SMOS_gridded/201',1)[1]
     date = from_name_smos[21:29]
     date = datetime.datetime.strptime(date, '%Y%m%d')
     smos_data['date'] = date
